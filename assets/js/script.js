@@ -6,7 +6,7 @@ document.querySelector("#generate").addEventListener("click", writePassword);
 
 // Prompt to confirm how many characters the user would like in their password
 function generatePassword() {
-  var confirmLength = (prompt("How many characters would you like your password to contain?"));
+    var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
   // Loop if answer is outside the parameters 
   while (confirmLength <= 7 || confirmLength >= 128) {
