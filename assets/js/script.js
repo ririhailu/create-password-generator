@@ -27,9 +27,9 @@ function generatePassword() {
   var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");
   var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
   var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
-  
+
   // Loop if answer is outside the parameters 
-  while (confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
+   while (confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
     alert("You must choose at least one parameter");
     var tryAgain = confirm("Do you want to try again?")
     if (!tryAgain) {
@@ -79,3 +79,4 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
